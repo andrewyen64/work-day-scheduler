@@ -126,6 +126,7 @@ $(document).ready(function() {
     var text15 = $(".textarea15").val();
     var text16 = $(".textarea16").val();
     var text17 = $(".textarea17").val();
+
     function init() {  
         $(".textarea9").val(localStorage.getItem("9am"));        
         $(".textarea10").val(localStorage.getItem("10am"));        
@@ -181,13 +182,9 @@ $(document).ready(function() {
             if (event.target.matches(".saveBtn")){
                 var text17 = $(".textarea17").val();
                 localStorage.setItem ("17pm", text17);
-            }
-            
-            
+            }           
             
         });
     }
     init();
 });
-
-// document.querySelector(".textarea9").textContent = localStorage.getItem("9am");
