@@ -117,15 +117,73 @@ $(document).ready(function() {
     change17Color();
 
     // Saves text in localStorage for that specific time
+    var text9 = $(".textarea9").val();
+    var text10 = $(".textarea10").val();
+    var text11 = $(".textarea11").val();
+    var text12 = $(".textarea12").val();
+    var text13 = $(".textarea13").val();
+    var text14 = $(".textarea14").val();
+    var text15 = $(".textarea15").val();
+    var text16 = $(".textarea16").val();
+    var text17 = $(".textarea17").val();
     function init() {  
-        var text9 = $(".textarea9").text;
-        $(".textarea9").text(localStorage.getItem("9am"));        
+        $(".textarea9").val(localStorage.getItem("9am"));        
+        $(".textarea10").val(localStorage.getItem("10am"));        
+        $(".textarea11").val(localStorage.getItem("11am"));        
+        $(".textarea12").val(localStorage.getItem("12pm"));        
+        $(".textarea13").val(localStorage.getItem("13pm"));        
+        $(".textarea14").val(localStorage.getItem("14pm"));        
+        $(".textarea15").val(localStorage.getItem("15pm"));        
+        $(".textarea16").val(localStorage.getItem("16pm"));        
+        $(".textarea17").val(localStorage.getItem("17pm"));        
         
         $(document).on("click", function(event) {
             if (event.target.matches(".saveBtn")){
+                var text9 = $(".textarea9").val();
                 localStorage.setItem ("9am", text9);
-                console.log(localStorage);
             }
+            
+            if (event.target.matches(".saveBtn")){
+                var text10 = $(".textarea10").val();
+                localStorage.setItem ("10am", text10);
+            }
+            
+            if (event.target.matches(".saveBtn")){
+                var text11 = $(".textarea11").val();
+                localStorage.setItem ("11am", text11);
+            }
+            
+            if (event.target.matches(".saveBtn")){
+                var text12 = $(".textarea12").val();
+                localStorage.setItem ("12pm", text12);
+            }
+            
+            if (event.target.matches(".saveBtn")){
+                var text13 = $(".textarea13").val();
+                localStorage.setItem ("13pm", text13);
+            }
+            
+            if (event.target.matches(".saveBtn")){
+                var text14 = $(".textarea14").val();
+                localStorage.setItem ("14pm", text14);
+            }
+            
+            if (event.target.matches(".saveBtn")){
+                var text15 = $(".textarea15").val();
+                localStorage.setItem ("15pm", text15);
+            }
+            
+            if (event.target.matches(".saveBtn")){
+                var text16 = $(".textarea16").val();
+                localStorage.setItem ("16pm", text16);
+            }
+            
+            if (event.target.matches(".saveBtn")){
+                var text17 = $(".textarea17").val();
+                localStorage.setItem ("17pm", text17);
+            }
+            
+            
             
         });
     }
