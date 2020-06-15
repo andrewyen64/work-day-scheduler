@@ -117,13 +117,13 @@ $(document).ready(function() {
     change17Color();
 
     // Saves text in localStorage for that specific time
-        
     function init() {  
-        $(".contentNine").text(localStorage.getItem("9am"));        
+        var text9 = $(".textarea9").text;
+        $(".textarea9").text(localStorage.getItem("9am"));        
         
         $(document).on("click", function(event) {
             if (event.target.matches(".saveBtn")){
-                localStorage.setItem ("9am", $(".textarea9").text);
+                localStorage.setItem ("9am", text9);
                 console.log(localStorage);
             }
             
